@@ -1,14 +1,809 @@
-{
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
-}
+[{
+    "info": {
+        "id": "P241114",
+        "number_of_players": 9,
+        "difficulty_level": 1,
+        "scenario": "Club Social",
+        "victim": "KILO",
+        "murderer": "FOXTROT",
+        "resolution_es": "(SPOILER ALERT: NO LEER HASTA EL DESENLACE) El asesino es FOXTROT quien mató a su buen amigo KILO porque mantenía con él una deuda económica insalvable. FOXTROT hizo el siguiente recorrido: RECEPCIÓN, SALÓN PRINCIPAL (donde cometiste el asesinato), BIBLIOTECA y PIANO BAR. El arma del crimen fue un ABRECARTAS que tomó en la RECEPCIÓN.",
+        "path": {
+            "places": ["reception", "mainhall", "library", "pianobar"]
+        },
+        "corpse": "mainhall",
+        "moment": 2
+    },
+    "characters": [
+        {
+            "name": "DETECTIVE SMART",
+            "chunks_0": [
+                {
+                    "text_es": "Nos encontramos en el Club Social."
+                },
+                {
+                    "text_es": "KILO, un exitoso empresario que además es el duque de Brigham, ha aparecido asesinado.",
+                    "characters": ["KILO"]
+                },
+                {
+                    "text_es": "SECRETO: El cadáver de KILO se ha encontrado en el SALÓN PRINCIPAL.",
+                    "map": {
+                        "places": ["mainhall"]
+                    },
+                    "characters": ["KILO"]
+                }
+            ],
+            "detective": true
+        },
+        {
+            "name": "LIMA",
+            "gender": "female",
+            "age": "middleage",
+            "chunks_0": [
+                {
+                    "text_es": "Eres LIMA, la viuda de KILO.",
+                    "characters": ["LIMA"]
+                },
+                {
+                    "text_es": "GOLF y HOTEL son hijos tuyos y de KILO.",
+                    "characters": ["GOLF", "HOTEL"]
+                },
+                {
+                    "text_es": "KILO, además de empresario, era el duque de Brigham.",
+                    "characters": ["KILO"]
+                },
+                {
+                    "text_es": "SECRETO: Le robaste a HOTEL la contraseña de acceso al ordenador personal de KILO para espiarle. Desde entonces la llevas siempre contigo. TOMA EL OBJETO 07.",
+                    "objects": ["card_7"]
+                },
+                {
+                    "text_es": "SECRETO: A espaldas de KILO, vendías información sensible de su empresa. Alguien lo descubrió y te viene chantajeando.",
+                    "characters": ["KILO"]
+                },
+                {
+                    "text_es": "No eres la asesina. Colabora para resolver el asesinato."
+                },
+                {
+                    "text_es": "LIMA podría tener acceso a información confidencial de la empresa de KILO.",
+                    "spyable": true
+                }
+            ],
+            "chunks_1": [
+                {
+                    "text_es": "GOLF es tu niño mimado. Protégele cueste lo que cueste.",
+                    "characters": ["GOLF"]
+                },
+                {
+                    "text_es": "SECRETO: La persona que te chantajea te ordenó que dejaras 20.000 $ dentro de un jarrón de la RECEPCIÓN durante la velada. Así lo hiciste."
+                },
+                {
+                    "text_es": "SECRETO: Trata de descubrir quién te está chantajeando."
+                },
+                {
+                    "text_es": "Estuviste en el PATIO y en la RECEPCIÓN.",
+                    "map": {
+                        "places": ["patio", "reception"]
+                    }
+                }
+            ],
+            "chunks_2": [
+                {
+                    "text_es": "FOXTROT a veces tiene comportamientos extraños, como si estuviese bajo el influjo de alguna sustancia.",
+                    "characters": ["FOXTROT"]
+                },
+                {
+                    "text_es": "ALFA llevaba poco tiempo trabajando para KILO.",
+                    "characters": ["ALFA"]
+                },
+                {
+                    "text_es": "Ahora recuerdas que también estuviste en la SALA DE JUEGOS y en el COMEDOR.",
+                    "map": {
+                        "places": ["gamesroom", "dinningroom"]
+                    }
+                },
+                {
+                    "text_es": "Coincidiste con JULIET en el MOMENTO 4.",
+                    "moment": 4,
+                    "characters": ["JULIET"]
+                }
+            ],
+            "chunks_3": [
+                {
+                    "text_es": "HOTEL y ECHO son buenas amigas. Serían capaces de todo la una por la otra.",
+                    "characters": ["HOTEL", "ECHO"]
+                },
+                {
+                    "text_es": "KILO era muy tacaño, no perdonaba ninguna deuda.",
+                    "characters": ["KILO"]
+                },
+                {
+                    "text_es": "En el MOMENTO 3 te encontrabas en la SALA DE JUEGOS.",
+                    "map": {
+                        "places": ["gamesroom"]
+                    },
+                    "moment": 3
+                }               
+            ]
+        },
+        {
+            "name": "GOLF",
+            "gender": "male",
+            "age": "middleage",
+            "chunks_0": [
+                {
+                    "text_es": "Eres GOLF, hijo de KILO y LIMA.",
+                    "characters": ["KILO", "LIMA"]
+                },
+                {
+                    "text_es": "HOTEL es tu hermana. Mantienes una relación correcta con ella.",
+                    "characters": ["HOTEL"]
+                },
+                {
+                    "text_es": "Odiabas a KILO porque era violento, déspota y criticaba constantemente tu estilo de vida.",
+                    "characters": ["KILO"]
+                },
+                {
+                    "text_es": "Quieres con locura a LIMA.",
+                    "characters": ["LIMA"]
+                },
+                {
+                    "text_es": "Eres abogado pero no ejerces como tal."
+                },
+                {
+                    "text_es": "SECRETO: Traficas con barbitúricos. Debes protegerte las espaldas. TOMA EL OBJETO 11",
+                    "objects": ["card_11"]
+                },
+                {
+                    "text_es": "No eres el asesino. Colabora para resolver el asesinato."
+                },
+                {
+                    "text_es": "GOLF no parece que muestre ninguna disposición por el trabajo duro.",
+                    "spyable": true
+                }
+            ],
+            "chunks_1": [
+                {
+                    "text_es": "SECRETO: FOXTROT es cliente tuyo. Acordaste una cita con él esta misma noche para cerrar una venta. Llevas el dinero del pago encima, son unos 2.000 $. TOMA EL OBJETO 06",
+                    "objects": ["card_6"],
+                    "characters": ["FOXTROT"]
+                },
+                {
+                    "text_es": "Crees que HOTEL es demasiado perfecta, seguro que tiene algún trapo sucio.",
+                    "characters": ["HOTEL"]
+                },
+                {
+                    "text_es": "Estuviste en la RECEPCIÓN y en la SALA DE JUEGOS.",
+                    "map": {
+                        "places": ["reception", "gamesroom"]
+                    }
+                }
+            ],
+            "chunks_2": [
+                {
+                    "text_es": "JULIET te resulta muy presuntuosa y altiva.",
+                    "characters": ["JULIET"]
+                },
+                {
+                    "text_es": "Ahora recuerdas que también estuviste en el PATIO y el COMEDOR.",
+                    "map": {
+                        "places": ["patio", "dinningroom"]
+                    }
+                },
+                {
+                    "text_es": "En el MOMENTO 4 te encontrabas en el PATIO.",
+                    "map": {
+                        "places": ["patio"]
+                    },
+                    "moment": 4
+                }
+            ],
+            "chunks_3": [
+                {
+                    "text_es": "Recuerdas que la contraseña del ordenador de KILO contenía el símbolo $.",
+                    "characters": ["KILO"]
+                },
+                {
+                    "text_es": "SECRETO: Desconfías de FOXTROT, pero es un buen cliente. Trata de que no sea inculpado.",
+                    "characters": ["FOXTROT"]
+                },
+                {
+                    "text_es": "En el MOMENTO 2 te encontrabas en la SALA DE JUEGOS.",
+                    "map": {
+                        "places": ["gamesroom"]
+                    },
+                    "moment": 2
+                },
+                {
+                    "text_es": "En el MOMENTO 3 te encontrabas en la COMEDOR.",
+                    "map": {
+                        "places": ["dinningroom"]
+                    },
+                    "moment": 3
+                }
+            ]
+        },
+        {
+            "name": "HOTEL",
+            "gender": "female",
+            "age": "middleage",
+            "chunks_0": [
+                {
+                    "text_es": "Eres HOTEL, hija de KILO y LIMA.",
+                    "characters": ["KILO", "LIMA"]
+                },
+                {
+                    "text_es": "GOLF es tu hermano.",
+                    "characters": ["GOLF"]
+                },
+                {
+                    "text_es": "Ejercías de secretaria personal de KILO y le ayudabas en la gestión de su empresa.",
+                    "characters": ["KILO"]
+                },
+                {
+                    "text_es": "Querías a KILO aunque a veces no te trataba bien.",
+                    "characters": ["KILO"]
+                },
+                {
+                    "text_es": "Con LIMA y GOLF mantienes una relación correcta.",
+                    "characters": ["LIMA", "GOLF"]
+                },
+                {
+                    "text_es": "ECHO y tú sois amigas íntimas.",
+                    "characters": ["ECHO"]
+                },
+                {
+                    "text_es": "SECRETO: Sentías auténtico pavor por las reacciones violentas de KILO cuando cometías el más mínimo fallo.",
+                    "characters": ["KILO"]
+                },
+                {
+                    "text_es": "SECRETO: Llevas encima un aerosol de defensa personal. TOMA EL OBJETO 12",
+                    "objects": ["card_12"]
+                    
+                },
+                {
+                    "text_es": "No eres la asesina. Colabora para resolver el asesinato."
+                },
+                {
+                    "text_es": "HOTEL está nerviosa como si hubiera cometido un error imperdonable.",
+                    "spyable": true
+                }
+            ],
+            "chunks_1": [
+                {
+                    "text_es": "La relación entre KILO y GOLF era nefasta. KILO siempre le repetía que debía cambiar su estilo de vida.",
+                    "characters": ["KILO", "GOLF"]
+                },
+                {
+                    "text_es": "ECHO tiene en un pedestal a JULIET. Se muere por trabajar para ella.",
+                    "characters": ["JULIET"]
+                },
+                {
+                    "text_es": "SECRETO: Hace unas semanas perdiste la contraseña de acceso al ordenador de KILO. La tenías apuntada en un papel amarillo. Procura localizarla y que nadie se entere.",
+                    "characters": ["KILO"]
+                },
+                {
+                    "text_es": "Estuviste en el PIANO BAR y en el JARDÍN.",
+                    "map": {
+                        "places": ["pianobar", "garden"]
+                    }
+                },
+                {
+                    "text_es": "Coincidiste con ALFA en el PIANO BAR, en algún momento de la velada.",
+                    "map": {
+                        "places": ["pianobar"]
+                    },
+                    "characters": ["ALFA"]
+                }
+            ],
+            "chunks_2": [
+                {
+                    "text_es": "Entre los documentos de KILO, encuentras el certificado nobiliario que le acredita como duque de Brigham. TOMA EL OBJETO 01",
+                    "objects": ["card_1"],
+                    "characters": ["KILO"]
+                },
+                {
+                    "text_es": "Tienes la sensación de que alguien pudiera estar filtrando información de la empresa de KILO a la competencia."
+                },
+                {
+                    "text_es": "Coincidiste con JULIET en el MOMENTO 1.",
+                    "moment": 1,
+                    "characters": ["JULIET"]
+                }
+            ],
+            "chunks_3": [
+                {
+                    "text_es": "GOLF y LIMA nunca han mostrado interés por gestionar la empresa de KILO.",
+                    "characters": ["GOLF", "LIMA"]
+                },
+                {
+                    "text_es": "Ahora recuerdas que también estuviste en el PATIO y en la BIBLIOTECA.",
+                    "map": {
+                        "places": ["patio", "library"]
+                    }
+                },
+                {
+                    "text_es": "En el MOMENTO 3 te encontrabas en el PATIO.",
+                    "map": {
+                        "places": ["patio"]
+                    },
+                    "moment": 3
+                }
+            ]
+        },
+        {
+            "name": "JULIET",
+            "gender": "female",
+            "age": "mature",
+            "chunks_0": [
+                {
+                    "text_es": "Eres JULIET, la directora de la prestigiosa revista Stilo.",
+                    "characters": ["JULIET"]
+                },
+                {
+                    "text_es": "Estás casada con INDIO.",
+                    "characters": ["INDIO"]
+                },
+                {
+                    "text_es": "Conoces a ECHO por tu trabajo, pero nunca ha trabajado para ti.",
+                    "characters": ["ECHO"]
+                },
+                {
+                    "text_es": "Tu familia y la de KILO llevan mucho tiempo disputándose el título de duque de Brigham."
+                },
+                {
+                    "text_es": "SECRETO: Odiabas profundamente a KILO.",
+                    "characters": ["KILO"]
+                },
+                {
+                    "text_es": "No eres la asesina. Descubre al asesino y trata de ayudarle a no ser descubierto."
+                },
+                {
+                    "text_es": "JULIET haría lo que fuese por algo que le proporcionase exclusividad y sofisticación.",
+                    "characters": ["JULIET"],
+                    "spyable": true
+                }
+            ],
+            "chunks_1": [
+                {
+                    "text_es": "Estás emocionada porque ECHO ha descubierto que eres la legítima propietaria del Ducado de Brigham, el título que ostentaba KILO.",
+                    "characters": ["ECHO"]
+                },
+                {
+                    "text_es": "Has escuchado que KILO tenía una memoria pésima y necesitaba apuntarse datos importantes en notas.",
+                    "characters": ["KILO"]
+                },
+                {
+                    "text_es": "SECRETO: Por prescripción médica consumes barbitúricos. No te gustaría que esto trascendiera. TOMA EL OBJETO 09",
+                    "objects": ["card_9"]
+                },
+                {
+                    "text_es": "Estuviste en el PIANO BAR.",
+                    "map": {
+                        "places": ["pianobar"]
+                    }
+                },
+                {
+                    "text_es": "Coincidiste con ALFA en el MOMENTO 1.",
+                    "moment": 1,
+                    "characters": ["ALFA"]
+                }
+            ],
+            "chunks_2": [   
+                {
+                    "text_es": "KILO era muy exigente y tremendamente cruel cuando alguien cometía un error.",
+                    "characters": ["KILO"]
+                },
+                {
+                    "text_es": "FOXTROT es un escritor acabado, sus libros ya no interesan a nadie.",
+                    "characters": ["FOXTROT"]
+                },
+                {
+                    "text_es": "Ahora recuerdas que también estuviste en el JARDÍN y en el COMEDOR.",
+                    "map": {
+                        "places": ["garden", "dinningroom"]
+                    }
+                }
+            ],
+            "chunks_3": [
+                {
+                    "text_es": "GOLF dice que es abogado pero no crees que haya ejercido como tal nunca.",
+                    "characters": ["GOLF"]
+                },
+                {
+                    "text_es": "Crees que HOTEL es de fiar a pesar de su familia.",
+                    "characters": ["HOTEL"]
+                },
+                {
+                    "text_es": "Recuerdas que coincidiste con ALFA también en el JARDÍN.",
+                    "map": {
+                        "places": ["garden"]
+                    },
+                    "characters": ["ALFA"]
+                }
+            ]
+        },
+        {
+            "name": "INDIO",
+            "gender": "male",
+            "age": "young",
+            "chunks_0": [
+                {
+                    "text_es": "Eres INDIO, editor de la prestigiosa revista Stilo.",
+                    "characters": ["INDIO"]
+                },
+                {
+                    "text_es": "Estás casado con JULIET.",
+                    "characters": ["JULIET"]
+                },
+                {
+                    "text_es": "En el pasado editaste alguna novela de FOXTROT.",
+                    "characters": ["FOXTROT"]
+                },
+                {
+                    "text_es": "SECRETO: Descubriste que LIMA vende información confidencial de la empresa de KILO a la competencia.",
+                    "characters":["LIMA"]
+                },
+                {
+                    "text_es": "SECRETO: Secretamente, te dedicas a chantajear a LIMA. Ella no sabe que eres tú.",
+                    "characters":["LIMA"]
+                },
+                {
+                    "text_es": "Llevas encima la llave de tu casa. TOMA EL OBJETO 10",
+                    "objects": ["card_10"]
+                },
+                {
+                    "text_es": "No eres el asesino. Colabora para resolver el asesinato."
+                },
+                {
+                    "text_es": "INDIO es esa clase de persona que parece conocer los secretos de todo el mundo.",
+                    "spyable": true
+                }
+            ],
+            "chunks_1": [
+                {
+                    "text_es": "Adoras a JULIET y la apoyarías en cualquier situación.",
+                    "characters":["JULIET"]
+                },
+                {
+                    "text_es": "KILO tenía fama de reaccionar violentamente cuando alguien le fallaba.",
+                    "characters":["KILO"]
+                },
+                {
+                    "text_es": "SECRETO: Ordenaste a LIMA que dejase 20.000 $ dentro de un jarrón de la RECEPCIÓN durante la velada. Tú pasaste después a recogerlos sin que nadie te viera. TOMA EL OBJETO 05",
+                    "objects": ["card_5"],
+                    "characters":["LIMA"]
+                },
+                {
+                    "text_es": "Estuviste en la RECEPCIÓN.",
+                    "map": {
+                        "places": ["reception"]
+                    }
+                } 
+            ],
+            "chunks_2": [
+                {
+                    "text_es": "FOXTROT te pidió un préstamo pero lo rechazaste porque sabes que no podría devolvértelo.",
+                    "characters": ["FOXTROT"]
+                },
+                {
+                    "text_es": "ECHO tiene pinta de ser una aduladora y una trepa.",
+                    "characters": ["ECHO"]
+                },
+                {
+                    "text_es": "SECRETO: No te interesa que LIMA sea inculpada. Trata de evitarlo por todos los medios.",
+                    "characters": ["LIMA"]
+                },
+                {
+                    "text_es": "Ahora recuerdas que también estuviste en el JARDÍN y en el PATIO.",
+                    "map": {
+                        "places": ["garden", "patio"]
+                    }
+                },
+                {
+                    "text_es": "En el MOMENTO 3 te encontrabas en la RECEPCIÓN.",
+                    "map": {
+                        "places": ["reception"]
+                    },
+                    "moment": 3
+                }
+            ],
+            "chunks_3": [
+                {
+                    "text_es": "GOLF tiene fama de no perderse ninguna fiesta.",
+                    "characters": ["GOLF"]
+                },
+                {
+                    "text_es": "Los abrecartas que tienen en la RECEPCIÓN son muy elegantes.",
+                    "map": {
+                        "places": ["reception"]
+                    }
+                },
+                {
+                    "text_es": "En el MOMENTO 2 te encontrabas en el PATIO.",
+                    "map": {
+                        "places": ["patio"]
+                    },
+                    "moment": 2
+                }
+            ]
+        },
+        {
+            "name": "ECHO",
+            "gender": "female",
+            "age": "mature",
+            "chunks_0": [
+                {
+                    "text_es": "Eres ECHO, periodista de investigación.",
+                    "characters": ["ECHO"]
+                },
+                {
+                    "text_es": "HOTEL y tú sois amigas íntimas.",
+                    "characters": ["HOTEL"]
+                },
+                {
+                    "text_es": "Conoces a JULIET por tu trabajo y la admiras mucho, pero nunca has trabajado para ella.",
+                    "characters": ["JULIET"]
+                },
+                {
+                    "text_es": "SECRETO: Harías cualquier cosa por trabajar para JULIET.",
+                    "characters": ["JULIET"]
+                },
+                {
+                    "text_es": "No eres la asesina. Colabora para resolver el asesinato."
+                },
+                {
+                    "text_es": "ECHO haría cualquier cosa por proteger a una amiga.",
+                    "characters": ["ECHO"],
+                    "spyable": true
+                }
+            ],
+            "chunks_1": [
+                {
+                    "text_es": "LIMA no se dedica a nada pero siempre parece muy ocupada con reuniones.",
+                    "characters": ["LIMA"]
+                },
+                {
+                    "text_es": "SECRETO: Decidiste ganarte la amistad de JULIET haciéndole creer que que es la legítima duquesa de Brigham. Para ello, has confeccionado un certificado nobiliario falso. TOMA EL OBJETO 02",
+                    "objects": ["card_2"],
+                    "characters": ["JULIET"]
+                },
+                {
+                    "text_es": "SECRETO: Nunca recuerdas la contraseña de tu ordenador. Por eso la llevas anotada en un papel. TOMA EL OBJETO 08",
+                    "objects": ["card_8"]
+                },
+                {
+                    "text_es": "Estuviste en la COCINA y en el COMEDOR.",
+                    "map": {
+                        "places": ["cocina", "dinningroom"]
+                    }
+                } 
+            ],
+            "chunks_2": [
+                {
+                    "text_es": "FOXTROT te resulta interesante y muy culto.",
+                    "characters": ["FOXTROT"]
+                },
+                {
+                    "text_es": "Ahora recuerdas que también estuviste en la BIBLIOTECA y en el PATIO.",
+                    "map": {
+                        "places": ["library", "patio"]
+                    }
+                },
+                {
+                    "text_es": "Coincidiste con HOTEL en el MOMENTO 3.",
+                    "moment": 3,
+                    "characters": ["HOTEL"]
+                }
+            ],
+            "chunks_3": [
+                {
+                    "text_es": "HOTEL te ha llegado a confesar que sentía miedo por las violentas reacciones de KILO.",
+                    "characters": ["HOTEL", "KILO"]
+                },
+                {
+                    "text_es": "También coincidiste con HOTEL en la BIBLIOTECA.",
+                    "map": {
+                        "places": ["library"]
+                    },
+                    "characters": ["HOTEL"]
+                },
+                {
+                    "text_es": "En el MOMENTO 3 te encontrabas en el PATIO.",
+                    "map": {
+                        "places": ["patio"]
+                    },
+                    "moment": 3
+                }
+            ]
+        },
+        {
+            "name": "ALFA",
+            "gender": "female",
+            "age": "mature",
+            "chunks_0": [
+                {
+                    "text_es": "Eres ALFA, chófer de KILO.",
+                    "characters": ["ALFA"]
+                },
+                {
+                    "text_es": "Llevabas poco tiempo trabajando para KILO.",
+                    "characters": ["KILO"]
+                },
+                {
+                    "text_es": "SECRETO: En realidad eres agente de la Agencia Antidroga en misión secreta. TOMA EL OBJETO 04",
+                    "objects": ["card_4"]
+                },
+                {
+                    "text_es": "SECRETO: Portas un arma reglamentaria. TOMA EL OBJETO 14",
+                    "objects": ["card_14"]
+                },
+                {
+                    "text_es": "No eres la asesina. Colabora para resolver el asesinato."
+                },
+                {
+                    "text_es": "Da la sensación de que ALFA realmente se dedica a algo que no le gustaría que se revelara.",
+                    "characters": ["ALFA"],
+                    "spyable": true
+                }
+            ],
+            "chunks_1": [
+                {
+                    "text_es": "SECRETO: Según tus superiores, un importante camello está operando en este entorno. Trata de localizarlo y obtén pruebas."
+                },
+                {
+                    "text_es": "La clave para conocer los secretos de KILO es acceder a su ordenador personal.",
+                    "characters": ["KILO"]
+                },
+                {
+                    "text_es": "KILO estaba muy molesto porque alguien le debía una gran suma de dinero.",
+                    "characters": ["KILO"]
+                },
+                {
+                    "text_es": "Estuviste en el JARDÍN.",
+                    "map": {
+                        "places": ["garden"]
+                    }
+                } 
+            ],
+            "chunks_2": [
+                {
+                    "text_es": "Las familias de KILO y JULIET llevan varias generaciones enfrentadas disputándose el Ducado de Brigham.",
+                    "characters": ["KILO", "JULIET"]
+                },
+                {
+                    "text_es": "Ahora recuerdas que también estuviste en el PIANO BAR.",
+                    "map": {
+                        "places": ["pianobar"]
+                    }
+                },
+                {
+                    "text_es": "Coincidiste con JULIET en el MOMENTO 2.",
+                    "moment": 2,
+                    "characters": ["JULIET"]
+                },
+                {
+                    "text_es": "En el MOMENTO 4 te encontrabas en el JARDÍN.",
+                    "map": {
+                        "places": ["garden"]
+                    },
+                    "moment": 4
+                }
+            ],
+            "chunks_3": [
+                {
+                    "text_es": "Escuchaste a un camarero del PIANO BAR decir que había desaparecido un picahielos.",
+                    "map": {
+                        "places": ["pianobar"]
+                    }
+                },
+                {
+                    "text_es": "LIMA parece aliviada con la muerte de KILO.",
+                    "characters": ["LIMA"]
+                },
+                {
+                    "text_es": "En el MOMENTO 1 te encontrabas en el PIANO BAR.",
+                    "map": {
+                        "places": ["pianobar"]
+                    },
+                    "moment": 1
+                }
+            ]
+        },
+        {
+            "name": "FOXTROT",
+            "gender": "male",
+            "age": "mature",
+            "chunks_0": [
+                {
+                    "text_es": "Eres FOXTROT, escritor.",
+                    "characters": ["FOXTROT"]
+                },
+                {
+                    "text_es": "Eras buen amigo de KILO.",
+                    "characters": ["KILO"]
+                },
+                {
+                    "text_es": "En el pasado INDIO editó alguna de tus novelas.",
+                    "characters": ["INDIO"]
+                },
+                {
+                    "text_es": "SECRETO: Llevas tiempo sin publicar algo que te reporte beneficios."
+                },
+                {
+                    "text_es": "SECRETO: KILO te concedió un préstamo hace años pero hasta ahora no se lo has devuelto. Estaba muy enfadado contigo.",
+                    "characters": ["KILO"]
+                },
+                {
+                    "text_es": "SECRETO: ¡Eres el ASESINO! Mataste a KILO para no afrontar la deuda que mantenías con él."
+                },
+                {
+                    "text_es": "SECRETO: Para matar a KILO empleaste un abrecartas que cogiste en la RECEPCIÓN. TOMA EL OBJETO 13",
+                    "objects": ["card_13"],
+                    "map": {
+                        "places": ["reception"]
+                    }
+                },
+                {
+                    "text_es": "FOXTROT es proclive a caer en problemas derivados de sus adicciones.",
+                    "characters": ["FOXTROT"],
+                    "spyable": true
+                }
+            ],
+            "chunks_1": [
+                {
+                    "text_es": "SECRETO: Eres adicto a los barbitúricos. GOLF trafica con ellos y es quien te los vende.",
+                    "characters": ["GOLF"]
+                },
+                {
+                    "text_es": "SECRETO: Acordaste una cita con GOLF en el club durante la velada para comprarle barbitúricos. TOMA EL OBJETO 03",
+                    "objects": ["card_3"],
+                    "characters": ["GOLF"]
+                },
+                {
+                    "text_es": "KILO tenía muy mal genio. Fallarle era siempre una mala idea.",
+                    "characters": ["KILO"]
+                },
+                {
+                    "text_es": "SECRETO: Este fue el recorrido que hiciste: RECEPCIÓN, SALÓN PRINCIPAL (donde cometiste el asesinato), BIBLIOTECA y PIANO BAR.",
+                    "path": {
+                        "places": ["reception", "mainhall", "library", "pianobar"]
+                    },
+                    "corpse": "mainhall"
+                },
+                {
+                    "text_es": "Coincidiste con GOLF en la RECEPCIÓN, en algún momento de la velada.",
+                    "map": {
+                        "places": ["reception"]
+                    },
+                    "characters": ["GOLF"]
+                }
+            ],
+            "chunks_2": [
+                {
+                    "text_es": "Últimamente KILO desconfiaba de LIMA. Pensaba que le ocultaba algo.",
+                    "characters": ["KILO", "LIMA"]
+                },
+                {
+                    "text_es": "Tienes sospechas de ALFA por lo rápido que se ganó la confianza de KILO.",
+                    "characters": ["ALFA"]
+                }
+            ],
+            "chunks_3": [
+                {
+                    "text_es": "Sabes que los certificados nobiliarios legítimos contienen un sello con una estrella de 7 puntas."
+                },
+                {
+                    "text_es": "SECRETO: Sabes que GOLF siempre porta una pistola. Usa esto sólo si te sientes acorralado.",
+                    "characters": ["GOLF"]
+                },
+                {
+                    "text_es": "En el MOMENTO 3 te encontrabas en la BIBLIOTECA.",
+                    "text_fr": "Dans le momment 3... te encontrabas en la BIBLIOTECA.",
+                    "map": {
+                        "places": ["library"]
+                    },
+                    "moment": 3
+                }
+            ]
+        }
+    ]
+}]
